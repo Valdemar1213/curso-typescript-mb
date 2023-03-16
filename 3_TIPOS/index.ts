@@ -168,3 +168,7 @@ function showDirection(direction: "left" | "right" | "center") {
 }
 
 showDirection("left");
+
+// 16- Non-null assertion
+const p = document.getElementById("some-p");
+console.log(p!.innerText);
