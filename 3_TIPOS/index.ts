@@ -115,3 +115,43 @@ function showId(id: ID) {
 
 showId(1);
 showId("200");
+
+// 13- Interfaces
+interface Point {
+  x: number;
+  y: number;
+  z: number;
+}
+
+function showCoords(obj: Point) {
+  console.log(`X: ${obj.x} Y: ${obj.y} Z: ${obj.z}`);
+}
+
+const coordObj: Point = {
+  x: 10,
+  y: 15,
+  z: 20,
+};
+
+showCoords(coordObj);
+
+// 14- Tipo alias x Interface
+interface Person {
+  name: string;
+}
+
+interface Person {
+  age: number;
+}
+
+const somePerson: Person = { name: "Valdemar", age: 35 };
+
+console.log(somePerson);
+
+type PersonType = {
+  name: string;
+};
+
+// type PersonType = {
+//   age: number
+// }
