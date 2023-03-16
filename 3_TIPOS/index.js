@@ -47,3 +47,12 @@ function showNumbers(a, b, c) {
     console.log(`C: ${c}`);
 }
 showNumbers(1, 2);
+// 9- Validação de parametros
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`;
+    }
+    return `Olá, ${firstName}, tudo bem?`;
+}
+console.log(advancedGreeting("Valdemar", "Santana"));
+console.log(advancedGreeting("Pedro"));
