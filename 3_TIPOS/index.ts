@@ -172,3 +172,18 @@ showDirection("left");
 // 16- Non-null assertion
 const p = document.getElementById("some-p");
 console.log(p!.innerText);
+
+// 17- Bigint
+let n: bigint;
+
+n = 1000n;
+
+console.log(n);
+console.log(typeof n);
+
+// 18- Symbol
+let symbolA: symbol = Symbol("a");
+let symbolB = Symbol("a");
+
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
