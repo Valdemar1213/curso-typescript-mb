@@ -90,3 +90,18 @@ function showDogDetails(dog: Dog) {
 
 showDogDetails(turca);
 showDogDetails(bob);
+
+// 5- Exercício
+type ReviewUser = number | boolean;
+
+function showUserReview(review: ReviewUser) {
+  if (!review) {
+    console.log("Você não avaliou o produto.");
+    return;
+  }
+  console.log(`A nota que você deu foi ${review}, obrigado!`);
+}
+
+showUserReview(false);
+showUserReview(2);
+showUserReview(5);
